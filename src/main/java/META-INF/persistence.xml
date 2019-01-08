@@ -5,12 +5,12 @@
   version="2.1">
 
   <persistence-unit name="LOCAL_PERSISTENCE">
-    <description> Spring Hibernate JPA Configuration Example</description>
+    <description> Spring Boot - JPA - Hibernate - Postgres demo</description>
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
     <properties>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/sampledb" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://168.1.140.122:30092/sampledb" />
       <property name="javax.persistence.jdbc.user" value="postgres" />
       <property name="javax.persistence.jdbc.password" value="postgres" />
       <property name="hibernate.show_sql" value="true" />

@@ -23,7 +23,7 @@ public class BloggerController {
 	@RequestMapping(value = "/")
     @ResponseBody
     public String index() {
-		return "Welcome to Spring Boot Hibernate demo";
+		return "Welcome to Spring Boot - JPA - Hibernate - Postgres demo ---> running on IBM Cloud";
 	}
 
     @RequestMapping(value = "/delete")
@@ -38,6 +38,15 @@ public class BloggerController {
         }
         return "Blogger succesfully deleted!";
     }
+    
+    @RequestMapping("/savebloggers")
+	public String savebloggers(){
+		// save blogger details
+    	bloggerDao.save(new Blogger("Rajesh", "Gudikoti"));
+    	bloggerDao.save(new Blogger("Hemanth", "H G"));
+
+		return "Done with saving bloggers";
+	}
 
     @RequestMapping(value = "/save")
     @ResponseBody
@@ -52,6 +61,7 @@ public class BloggerController {
         }
         return "Blogger succesfully saved!";
     }
+    
     @RequestMapping(value = "/findall")
     @ResponseBody
     public List findAll() {
