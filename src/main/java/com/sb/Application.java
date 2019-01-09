@@ -1,8 +1,5 @@
 package com.sb;
 
-/*
- * https://www.onlinetutorialspoint.com/spring-boot/spring-boot-hibernate-integration-example.html
- * */
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
